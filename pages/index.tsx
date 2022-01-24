@@ -11,6 +11,16 @@ export default function Home() {
         <title>La Casa des enfants</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href={"/site.webmanifest"} />
+        <meta property="og:title" content="La Casa des enfants" />
+        <meta
+          property="og:description"
+          content="Le juste prix pour satisfaire vos enfants."
+        />
+        <meta
+          property="og:image"
+          content="
+          /preview.jpg"
+        />
       </Head>
 
       <main className="">
