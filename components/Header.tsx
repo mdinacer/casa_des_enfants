@@ -15,15 +15,15 @@ export default function Header() {
   const linksList = [
     { title: links.home, path: `/${locale}` },
     { title: links.services, path: `#services` },
-    { title: links.products, path: `#products` },
+    { title: links.products, path: `#catalog` },
     { title: links.contact, path: `#contact` },
-    { title: links.about, path: `#about` },
+    // { title: links.about, path: `#about` },
   ];
   return (
     <header>
-      <nav className="fixed w-full text-black dark:text-white bg-opacity-50 dark:bg-opacity-60 font-Oswald  flex flex-wrap items-center justify-between px-2 py-2 mb-3  bg-blue-400 dark:bg-blue-800 z-50 drop-shadow-lg backdrop-blur-sm">
+      <nav className="fixed w-full text-black dark:text-white bg-opacity-50 dark:bg-opacity-60 font-Oswald  flex flex-wrap items-center justify-between px-2 py-2 mb-3  bg-slate-400 dark:bg-slate-800 z-50 drop-shadow-lg backdrop-blur-sm">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div className="w-full relative flex  justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href={"/"} locale={"en"} passHref>
               <figure className={"flex flex-row items-center cursor-pointer"}>
                 <svg
@@ -48,7 +48,9 @@ export default function Header() {
               </figure>
             </Link>
 
-            <div className={"flex flex-row sm:block lg:hidden items-center"}>
+            <div
+              className={"flex flex-row lg:hidden items-center justify-center"}
+            >
               <ThemeSwitcher />
               <LanguageSwitcher />
               <button
@@ -80,13 +82,11 @@ export default function Header() {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto  mx-auto ">
+            <ul className="flex flex-col lg:flex-row justify-start list-none lg:mx-auto w-full lg:w-auto   ">
               {linksList.map(({ title, path }, index) => (
                 <li
                   key={index}
-                  className={
-                    "nav-item" + (selected === index && "text-red-400")
-                  }
+                  className={"nav-item"}
                   onClick={() => {
                     console.log(index);
 
@@ -95,10 +95,10 @@ export default function Header() {
                 >
                   <Link href={path} passHref>
                     <a
-                      className={`px-3 py-2 flex items-center text-md uppercase underline-offset-2  leading-snug hover:opacity-75 transition-all duration-300 ${
+                      className={`px-3 py-2 flex items-center text-md uppercase underline-offset-2  leading-snug hover:opacity-75 transition-all duration-300 rounded ${
                         selected === index
-                          ? "text-orange-600 dark:text-orange-400 underline "
-                          : "text-black dark:text-white "
+                          ? "bg-orange-600 dark:bg-orang-300  text-white"
+                          : "text-black dark:text-white bg-transparent"
                       }`}
                     >
                       {title}
@@ -107,11 +107,33 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-
-            <div className="flex flex-row justify-end items-center">
-              <ThemeSwitcher />
-              <LanguageSwitcher />
-            </div>
+          </div>
+          <div
+            className={"hidden flex-row lg:flex items-center justify-center"}
+          >
+            <ThemeSwitcher />
+            <LanguageSwitcher />
+            <button
+              title="menu"
+              className=" cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setOpen(!open)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </nav>

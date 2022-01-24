@@ -16,7 +16,7 @@ module.exports = {
         contactBg: "url('/assets/images/contact_bg.png')",
       },
       fontFamily: {
-        Montserrat: ["Montserrat", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
         Oswald: ["Oswald", "sans-serif"],
       },
     },

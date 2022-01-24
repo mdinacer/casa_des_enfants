@@ -13,8 +13,8 @@ export default function Services() {
       <div className="relative lg:container  px-10 h-full flex flex-col items-center justify-center z-10">
         <h1 className=" text-5xl mb-20 font-Oswald self-start">{title}</h1>
 
-        <section className="relative grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 auto-rows-auto z-10">
-          <article className="mb-5 lg:bg-opacity-90 lg:dark:bg-opacity-90 hover:bg-opacity-100 rounded-2xl  bg-emerald-400 hover:bg-pink-500 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-pink-700 transition-all duration-300">
+        <section className="relative grid gap-4  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 auto-rows-auto z-10">
+          <article className="mb-5 lg:bg-opacity-90 lg:dark:bg-opacity-90 hover:bg-opacity-100 rounded-2xl  bg-pink-400 hover:bg-indigo-500 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-indigo-700 transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-16 w-16 mx-auto  mix-blend-overlay"
@@ -35,7 +35,7 @@ export default function Services() {
             </div>
           </article>
 
-          <article className=" mb-5 lg:dark:bg-opacity-90 lg:bg-opacity-90 hover:bg-opacity-100 rounded-2xl bg-blue-500 hover:bg-teal-300 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-teal-700 transition-all duration-300">
+          <article className=" mb-5 lg:dark:bg-opacity-90 lg:bg-opacity-90 hover:bg-opacity-100 rounded-2xl bg-red-500 hover:bg-green-500 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-green-700 transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-16 w-16 mx-auto mix-blend-overlay"
@@ -56,7 +56,7 @@ export default function Services() {
             </div>
           </article>
 
-          <article className="mb-5 lg:dark:bg-opacity-90 lg:bg-opacity-90 hover:bg-opacity-100 rounded-2xl bg-amber-500 hover:bg-rose-500 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-rose-700 transition-all duration-300">
+          <article className="mb-5 lg:dark:bg-opacity-90 lg:bg-opacity-90 hover:bg-opacity-100 rounded-2xl bg-yellow-400 hover:bg-purple-400 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-purple-700 transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-16 w-16 mx-auto mix-blend-overlay"
@@ -78,7 +78,7 @@ export default function Services() {
             </div>
           </article>
 
-          <article className="mb-5 lg:dark:bg-opacity-90 lg:bg-opacity-90 hover:bg-opacity-100 rounded-2xl bg-fuchsia-500 hover:bg-red-500 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-red-700 transition-all duration-300">
+          <article className="mb-5 lg:dark:bg-opacity-90 lg:bg-opacity-90 hover:bg-opacity-100 rounded-2xl bg-sky-500 hover:bg-orange-500 p-10 shadow-none lg:hover:shadow-lg lg:hover:shadow-orange-700 transition-all duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-16 w-16 mx-auto mix-blend-overlay "

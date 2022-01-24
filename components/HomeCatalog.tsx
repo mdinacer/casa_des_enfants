@@ -47,7 +47,7 @@ export default function HomeCatalog() {
         </div> */}
 
         <div className="flex flex-col justify-center items-center">
-          <div className="grid grid-flow-row lg:grid-cols-3  sm:grid-cols-2 md:grid-cols-3 gap-4 py-20">
+          <div className="grid grid-flow-row lg:grid-cols-2 xl:grid-cols-3  sm:grid-cols-2 md:grid-cols-2 gap-4 py-20">
             {Products.map((product) => (
               // <div
               //   key={product.id}
@@ -105,7 +105,7 @@ export default function HomeCatalog() {
 
           <button
             type="button"
-            className="font-Montserrat text-sm bg-orange-600 py-2 px-5 text-white uppercase rounded-lg shadow-none hover:shadow-lg hover:shadow-orange-800 scale-100 hover:scale-110 transition-all  duration-300 hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-600 hover:bg-opacity-30 hover:backdrop-blur-md"
+            className="font-Oswald text-lg bg-orange-600 py-2 px-5 text-white uppercase rounded-lg shadow-none hover:shadow-lg hover:shadow-orange-800 scale-100 hover:scale-110 transition-all  duration-300 hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-600 hover:bg-opacity-30 hover:backdrop-blur-md"
           >
             {action}
           </button>
