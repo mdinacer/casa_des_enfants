@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="space-y-14 lg:space-y-24">
       <Head>
-        <title>Create Next App</title>
+        <title>La Casa des enfants</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href={"/site.webmanifest"} />
       </Head>
