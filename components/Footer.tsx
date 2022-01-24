@@ -11,6 +11,7 @@ export default function Footer() {
   const { locale } = useRouter();
 
   const title = locale === "en" ? "Contact Us" : "Contactez nous";
+  const location = locale === "en" ? "Location" : "Localisation";
   return (
     <footer
       className="relative w-full h-full bg-slate-300 dark:bg-slate-600 
@@ -21,8 +22,8 @@ export default function Footer() {
       ></div>
 
       <div className="container relative">
-        <h1 className="text-5xl my-20 font-Oswald">{title}</h1>
-        <div className="relative font-Oswald  p-4  grid grid-cols-5 gap-4 z-10">
+        <h1 className="text-5xl my-5 font-Oswald">{title}</h1>
+        <div className="relative font-Oswald  p-4  grid grid-cols-1 sm:grid-cols-5 gap-4 z-10">
           <a
             href="https://www.instagram.com/la_casa_des_enfants/"
             target={"_blank"}
@@ -86,7 +87,7 @@ export default function Footer() {
               className=" w-8 h-8 m-1"
               icon={faLocationArrow}
             ></FontAwesomeIcon>
-            Location
+            {location}
           </a>
         </div>
       </div>
