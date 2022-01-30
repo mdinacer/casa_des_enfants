@@ -20,59 +20,14 @@ export default function HomeCatalog() {
   return (
     <div className="relative shadow-slate-500 min-h-screen h-full w-full py-20   bg-slate-200 dark:bg-slate-700 text-black dark:text-white overflow-hidden">
       <div
-        className={`absolute bg-fixed top-0 left-0 min-h-screen h-full w-full bg-catalogBg z-[1] grayscale mix-blend-overlay`}
+        className={`absolute bg-fixed bg-cover bg-center top-0 left-0 min-h-screen h-full w-full bg-catalogBg  grayscale mix-blend-overlay`}
       ></div>
       <div className="container px-10 z-[10] relative">
         <h1 className="font-Oswald text-5xl ">{title}</h1>
-        {/* <div className="flex items-center ">
-          <div className="flex flex-col sm:flex-row justify-evenly items-center uppercase font-Oswald mx-auto">
-            {collections.map(({ id, title, color }) => (
-              <button
-                type="button"
-                onClick={() => {
-                  setSelected(id);
-                  console.log(selected);
-                }}
-                key={id}
-                className={`min-w-[120px]  bg-transparent rounded-lg  hover:bg-indigo-300 dark:hover:bg-indigo-800 w-full mx-2 py-1 px-2 transition-all duration-300 ${
-                  selected === id
-                    ? "bg-transparent text-indigo-800 dark:text-indigo-300 underline underline-offset-2 scale-125"
-                    : "bg-transparent"
-                }`}
-              >
-                <div>{title}</div>
-              </button>
-            ))}
-          </div>
-        </div> */}
 
         <div className="flex flex-col justify-center items-center">
           <div className="grid grid-flow-row lg:grid-cols-2 xl:grid-cols-3  sm:grid-cols-2 md:grid-cols-2 gap-4 py-20">
             {Products.map((product) => (
-              // <div
-              //   key={product.id}
-              //   className="relative h-full w-full  bg-slate-300 dark:bg-slate-600  rounded-md overflow-hidden"
-              // >
-              //   <div className="relative min-w-80 bg-white  w-full h-60  mx-auto  ">
-              //     <Image
-              //       src={`/assets/images/${product.image}`}
-              //       alt={product.name}
-              //       layout="fill"
-              //     />
-              //   </div>
-              //   <div className="absolute top-0 left-0 w-full shadow-sm shadow-gray-500 bg-slate-800 bg-opacity-40 font-bold text-white font-Montserrat px-3 py-1 rounded-t-md">
-              //     $ {product.price}
-              //   </div>
-              //   <div className="absolute top-0 right-0 text-center bg-red-600 bg-opacity-70 min-w-[60px] font-bold text-white font-Montserrat px-3 py-1 rounded-tr-md">
-              //     {product.age}
-              //   </div>
-
-              //   <div className=" py-2 px-4 h-max ">
-              //     <p className=" font-Oswald text-lg flex-grow-1 flex-shrink flex-auto">
-              //       {product.name}
-              //     </p>
-              //   </div>
-              // </div>
               <div
                 key={product.id}
                 className="w-80 h-80 bg-slate-300 dark:bg-slate-600 rounded-3xl overflow-hidden shadow-sm shadow-gray-500"

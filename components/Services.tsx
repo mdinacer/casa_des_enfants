@@ -6,7 +6,7 @@ export default function Services() {
   const { locale } = useRouter();
   const { items, title } = locale === "en" ? servicesEn : servicesFr;
   return (
-    <div className="relative py-20 shadow-inner shadow-slate-900 h-full w-full  bg-gradient-to-br  from-slate-300 to-slate-400 dark:bg-gradient-to-br dark:from-slate-500 dark:to-slate-700 text-black dark:text-white">
+    <div className="relative py-20 shadow-inner shadow-slate-900 h-full w-full overflow-hidden  bg-gradient-to-br  from-slate-300 to-slate-400 dark:bg-gradient-to-br dark:from-slate-500 dark:to-slate-700 text-black dark:text-white">
       <div
         className={`absolute bg-fixed top-0 left-0 min-h-screen h-full w-full bg-servicesBg z-[1] grayscale mix-blend-overlay`}
       ></div>

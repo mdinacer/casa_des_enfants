@@ -15,11 +15,14 @@ export default function Footer() {
   return (
     <footer
       className="relative w-full min-h-[40vh] h-full bg-slate-300 dark:bg-slate-600 
-     text-black dark:text-white p-10 py-10"
+     text-black dark:text-white px-10 pt-10"
     >
-      <div className=" h-full flex flex-col justify-between">
-        <h1 className="text-5xl my-5 font-Oswald">{title}</h1>
-        <div className="relative font-Oswald  p-4 mt-auto grid-flow-row   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 z-10">
+      <div
+        className={`absolute  bg-contain  bg-bottom  bottom-0 left-0 right-0 top-0 bg-fill h-full w-full bg-contactBg z-[1] grayscale mix-blend-overlay my-auto`}
+      ></div>
+      <div className="relative h-full w-full">
+        <h1 className="text-5xl my-5 font-Oswald h-full flex-auto">{title}</h1>
+        <div className="flex-initial relative font-Oswald h-full  p-4 mt-auto grid-flow-row   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 z-10">
           <a
             href="tel:+213770818652"
             className="flex flex-col items-center bg-[#25D366] py-3 px-5 rounded-md  text-white lg:scale-90 lg:hover:scale-110 transition-all duration-700 col-span-1 md:col-span-2 lg:col-span-1 "
@@ -85,9 +88,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div
-        className={`absolute  bg-fixed bottom-0 left-0 right-0 top-0 bg-fill h-full w-full bg-contactBg z-[1] grayscale mix-blend-overlay my-auto`}
-      ></div>
     </footer>
   );
 }

@@ -7,7 +7,7 @@ export default function Hero() {
   const { locale } = useRouter();
   const source = locale === "en" ? heroEn : heroFr;
   return (
-    <div className=" flex justify-center items-center relative min-h-screen bg-gradient-to-br from-gray-200 to-gray-900">
+    <div className="relative h-screen w-full bg-gradient-to-br from-gray-200 to-gray-900">
       <video
         playsInline
         preload="none"
@@ -16,11 +16,11 @@ export default function Hero() {
         autoPlay
         loop
         muted
-        className=" opacity-70 absolute top-0 left-0 right-0 bottom-0 w-full min-h-screen h-full object-cover object-center"
+        className=" opacity-70 absolute top-0 left-0 right-0 bottom-0 w-full  h-screen object-cover object-center"
       />
-      <div className=" absolute top-0 left-0 min-h-screen min-w-full bg-gradient-to-br from-blue-900 to bg-slate-900 mix-blend-overlay" />
+      <div className=" absolute top-0 left-0 right-0 bottom-0  h-screen w-screen bg-gradient-to-b from-transparent to-black opacity-70 mix-blend-overlay" />
 
-      <div className="bg-black bg-opacity-25 lg:container mx-auto w-full h-screen flex flex-col items-center justify-end  z-[3] pb-20">
+      <div className="relative  lg:container mx-auto w-full h-screen flex flex-col items-center justify-end  z-[3] pb-20">
         <div className="w-auto h-auto flex items-center justify-center flex-col">
           <h1 className="uppercase text-center text-white font-Oswald text-5xl sm:text-7xl pb-5">
             {source.title}
